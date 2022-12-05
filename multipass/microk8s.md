@@ -24,3 +24,13 @@ export KUBECONFIG=/tmp/microk8s.yaml
 ```
 kubectl get nodes
 ```
+
+#### Run a test pod
+```
+kubectl run nginx --image=nginx && kubectl get pods --watch
+```
+
+#### Destroy the cluster
+```
+multipass delete microk8s
+```
