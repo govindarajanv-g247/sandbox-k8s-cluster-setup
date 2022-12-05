@@ -32,5 +32,5 @@ kubectl run nginx --image=nginx && kubectl get pods --watch
 
 #### Destroy the cluster
 ```
-multipass delete microk8s
+multipass delete microk8s && multipass purge
 ```
