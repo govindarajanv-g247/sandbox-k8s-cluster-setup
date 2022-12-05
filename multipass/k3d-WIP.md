@@ -7,7 +7,11 @@ multipass launch --name k3s --mem 8G
 
 #### Install microk8s in the VM
 ```
-multipass exec k3s -- sudo apt update -y && curl -sfL https://get.k3s.io | sh -
+multipass exec k3s -- sudo apt update -y && curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash 
+```
+#### copy the cluster configuration
+```
+multipass exec k3s -- sudo k3d cluster create mycluster
 ```
 
 #### copy the cluster configuration
