@@ -22,5 +22,5 @@ export KUBECONFIG=/tmp/microk8s.yaml
 
 #### Inspect the nodes
 ```
-kubeclt get nodes
+kubectl get nodes
 ```
